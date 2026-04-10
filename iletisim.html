@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,700;1,300&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#e4e2e1",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "on-tertiary": "#303030",
+                    "secondary-container": "#474746",
+                    "primary-container": "#c5a059",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "surface-container": "#201f1f",
+                    "primary": "#e9c176",
+                    "background": "#131313",
+                    "error-container": "#93000a",
+                    "on-secondary": "#313030",
+                    "on-background": "#e5e2e1",
+                    "surface-tint": "#e9c176",
+                    "outline": "#9a8f80",
+                    "on-secondary-container": "#b7b5b4",
+                    "on-primary-fixed-variant": "#5d4201",
+                    "on-error-container": "#ffdad6",
+                    "on-tertiary-container": "#3b3b3b",
+                    "secondary-fixed": "#e5e2e1",
+                    "surface-variant": "#353534",
+                    "on-surface": "#e5e2e1",
+                    "tertiary-container": "#a7a5a5",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "inverse-on-surface": "#313030",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-surface-variant": "#d1c5b4",
+                    "on-secondary-fixed-variant": "#474746",
+                    "on-tertiary-fixed-variant": "#474747",
+                    "on-error": "#690005",
+                    "surface-dim": "#131313",
+                    "surface-container-highest": "#353534",
+                    "on-primary-fixed": "#261900",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "primary-fixed": "#ffdea5",
+                    "inverse-surface": "#e5e2e1",
+                    "on-primary-container": "#4e3700",
+                    "surface": "#131313",
+                    "primary-fixed-dim": "#e9c176",
+                    "surface-container-low": "#1c1b1b",
+                    "surface-bright": "#393939",
+                    "tertiary": "#c8c6c5",
+                    "error": "#ffb4ab",
+                    "secondary": "#c8c6c5",
+                    "on-primary": "#412d00",
+                    "surface-container-high": "#2a2a2a",
+                    "outline-variant": "#4e4639",
+                    "inverse-primary": "#775a19"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>body {
+    font-family: "Manrope", sans-serif;
+    background-color: #131313;
+    color: #e5e2e1
+    }
+.font-serif {
+    font-family: "Noto Serif", serif
+    }
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24
+    }
+.noise-bg {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuB9kshmcpzGa0wfZSd-Yk4JxTuFinlJ4AqueA4fBQ5l2pv7hjtDiltYjR1CUOakLhyBDjtVAAPep6FCldUyPA5Fu9qNZEIdi9BrwJDN9M7BicOZ5if8x6pDR5-4gymlLb0G9IQe-dI1imEKTt8bkuL0MCJn5qWScjeX-d7OxN83GeT1tBbySBs40UJA5ne3gNZx0nZLwemSiBR6XKY0K431n8G0kRDBYzyQJsTNI-xQ9X2B8S7QNuEGoaHV66SE3FKtm4DVC1hXYrY);
+    opacity: 0.03;
+    pointer-events: none
+    }</style>
+</head>
+<body class="bg-background selection:bg-primary/30">
+<div class="fixed inset-0 noise-bg z-0"></div>
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-12 py-6 bg-stone-950/80 backdrop-blur-xl shadow-2xl shadow-black/50">
+<a href="giris.html" class="font-serif text-2xl tracking-tighter text-amber-200 hover:opacity-90 transition-opacity">YILMAZ OCAKBAŞI</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-stone-400 hover:text-amber-100 transition-colors font-label uppercase tracking-widest text-xs hover:bg-amber-200/5 transition-all duration-300" href="giris.html">ANA SAYFA</a>
+<a class="text-stone-400 hover:text-amber-100 transition-colors font-label uppercase tracking-widest text-xs hover:bg-amber-200/5 transition-all duration-300" href="menu.html">MENÜ</a>
+<a class="text-stone-400 hover:text-amber-100 transition-colors font-label uppercase tracking-widest text-xs hover:bg-amber-200/5 transition-all duration-300" href="rezervasyon.html">REZERVASYON</a>
+<a class="text-amber-200 border-b-2 border-amber-200 pb-1 font-label uppercase tracking-widest text-xs" href="iletisim.html">İLETİŞİM</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 font-label font-bold text-xs tracking-widest uppercase rounded-sm hover:brightness-110 active:scale-95 transition-all duration-300">
+            MASA AYIRT
+        </button>
+</nav>
+<!-- Hero Header -->
+<header class="relative pt-40 pb-20 px-8 overflow-hidden">
+<div class="absolute inset-0 z-[-1] opacity-40">
+<img class="w-full h-full object-cover" data-alt="atmospheric close-up of glowing charcoal embers in a traditional turkish grill with subtle smoke and orange light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnazzNCBtj4wqNhtQYwvhxHExmAsYWimk9nVvzGyaPjBBqpVx2-6ZQ9OZFTaPHQWAXh7p1qYrT3Ndc7Xw7iGsu811oRp2qms3lxE_S-9ZtOBZLKAdDAasG4bjp55ChvBlGCAT-1fjMqtPGpijnles9d20RrfKa1FaUHeP_Wo7-WzJop7OXE2pQ4GKNyvsuDtOGJtoWclrpfmO2v_KryVJmp45Yt2TaZdM1j9XaArzyyNuhtXRoA5PRBoBVAjoinIIflwrcoktmY-g"/>
+<div class="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
+</div>
+<div class="max-w-7xl mx-auto flex flex-col items-center text-center">
+<span class="text-primary tracking-[0.3em] uppercase text-sm mb-4 font-label">Modern Mirasın Küratörü</span>
+<h1 class="text-5xl md:text-7xl font-headline font-light text-on-surface mb-6 leading-tight italic">
+                Bize Ulaşın
+            </h1>
+<p class="max-w-xl text-on-surface-variant font-body font-light text-lg">
+                Karaköy'ün kalbinde ocağın sıcaklığını hissedin. Sorular, rezervasyonlar ve özel davetler için ekibimiz hizmetinizde.
+            </p>
+</div>
+</header>
+<main class="relative z-10 max-w-7xl mx-auto px-6 py-20">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Contact Form Section -->
+<section class="lg:col-span-7 bg-surface-container-low p-8 md:p-12 rounded-xl relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-9xl text-primary">edit_note</span>
+</div>
+<h2 class="text-3xl font-headline text-primary mb-12">Mesaj Gönder</h2>
+<form class="space-y-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="relative group">
+<input class="peer block w-full border-0 border-b border-outline bg-transparent py-2 px-0 text-on-surface focus:ring-0 focus:border-primary transition-colors" id="name" name="name" placeholder=" " type="text"/>
+<label class="absolute top-2 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-outline-variant duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary uppercase tracking-widest font-label" for="name">Ad Soyad</label>
+</div>
+<div class="relative group">
+<input class="peer block w-full border-0 border-b border-outline bg-transparent py-2 px-0 text-on-surface focus:ring-0 focus:border-primary transition-colors" id="email" name="email" placeholder=" " type="email"/>
+<label class="absolute top-2 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-outline-variant duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary uppercase tracking-widest font-label" for="email">E-Posta Adresi</label>
+</div>
+</div>
+<div class="relative group">
+<input class="peer block w-full border-0 border-b border-outline bg-transparent py-2 px-0 text-on-surface focus:ring-0 focus:border-primary transition-colors" id="subject" name="subject" placeholder=" " type="text"/>
+<label class="absolute top-2 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-outline-variant duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary uppercase tracking-widest font-label" for="subject">Konu</label>
+</div>
+<div class="relative group">
+<textarea class="peer block w-full border-0 border-b border-outline bg-transparent py-2 px-0 text-on-surface focus:ring-0 focus:border-primary transition-colors resize-none" id="message" name="message" placeholder=" " rows="4"></textarea>
+<label class="absolute top-2 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-outline-variant duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary uppercase tracking-widest font-label" for="message">Mesajınız</label>
+</div>
+<button class="group flex items-center gap-3 text-primary border border-primary/40 px-10 py-4 rounded-full font-label tracking-widest uppercase text-sm hover:bg-primary/10 transition-all duration-300" type="submit">
+                        Gönder
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</form>
+</section>
+<!-- Contact Info Grid Section -->
+<section class="lg:col-span-5 flex flex-col gap-12">
+<div class="grid grid-cols-1 gap-8">
+<!-- Address -->
+<div class="group bg-surface-container p-8 rounded-xl border border-outline-variant/10 hover:border-primary/20 transition-all">
+<div class="flex items-start gap-6">
+<div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h3 class="text-on-surface font-headline text-xl mb-2">Konum</h3>
+<p class="text-on-surface-variant font-body font-light leading-relaxed">
+                                    Kemankeş Karamustafa Paşa, <br/>
+                                    Necatibey Cd. No: 44, <br/>
+                                    Karaköy, İstanbul
+                                </p>
+</div>
+</div>
+</div>
+<!-- Phone & Email -->
+<div class="group bg-surface-container p-8 rounded-xl border border-outline-variant/10 hover:border-primary/20 transition-all">
+<div class="flex items-start gap-6">
+<div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<h3 class="text-on-surface font-headline text-xl mb-2">İletişim</h3>
+<p class="text-on-surface-variant font-body font-light leading-relaxed">
+                                    +90 554 576 14 23<br/>
+                                    <a class="text-primary hover:underline" href="mailto:cemal.yilmaz@std.ankaramedipol.edu.tr">cemal.yilmaz@std.ankaramedipol.edu.tr</a>
+                                </p>
+</div>
+</div>
+</div>
+<!-- Social Media -->
+<div class="p-8">
+<h3 class="text-primary font-label tracking-widest uppercase text-sm mb-6">Dijital Varlık</h3>
+<div class="flex gap-6">
+<a class="w-12 h-12 flex items-center justify-center rounded-full border border-outline-variant/30 hover:border-primary hover:text-primary transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a class="w-12 h-12 flex items-center justify-center rounded-full border border-outline-variant/30 hover:border-primary hover:text-primary transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Stylized Map Section -->
+<section class="w-full h-[500px] relative bg-surface-container-lowest mt-20 group">
+<div class="absolute inset-0 bg-primary/5 z-10 pointer-events-none mix-blend-overlay"></div>
+<div class="absolute inset-0 grayscale contrast-125 brightness-50 opacity-80 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="stylized architectural sketch map of a historic district with golden paths and dark charcoal backgrounds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFmbxqBnM7OQ9nQIUVk9YI1-Od7nNjPiSPQjgqieRGGvA8c5wzkBPIUv0a7Au1c9IM_VpAin6qlcwMH1H2Ct7Y_amggyRqp1EzqErQ9jnyop-tvDktmisIlbK6mLCyagsNc0vsyaASXqoGVgr7VD4EKvHDBo3_U5T-H2KXSb-45KmQic6keXSVUiKvNpmmcINTKOqFZo2CY8udwZDXZf93FNGyCytBtNhBc49vm5QjwK3GZ9TSpyT1iuf-ed2FHLx-3XFIixAbE6Y"/>
+</div>
+<!-- Map Overlay UI -->
+<div class="absolute inset-0 flex items-center justify-center z-20">
+<div class="text-center p-8 bg-[#131313]/80 backdrop-blur-xl border border-primary/20 rounded-xl max-w-sm">
+<span class="material-symbols-outlined text-primary text-5xl mb-4" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<h3 class="text-2xl font-headline mb-2">Karaköy'de Bizi Bulun</h3>
+<p class="text-sm text-on-surface-variant mb-6">Boğaz'ın kıyısında özenle tasarlanmış bir deneyim sizi bekliyor.</p>
+<a class="text-primary font-label tracking-widest uppercase text-xs border-b border-primary/50 pb-1 hover:border-primary transition-all" href="#">Yol Tarifi Al</a>
+</div>
+</div>
+<div data-location="Karakoy, Istanbul" style=""></div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] w-full border-t border-[#4e4639]/20">
+<div class="flex flex-col items-center gap-8 py-12 px-6 w-full">
+<div class="font-serif text-[#e9c176] text-3xl">Akpınar Ocakbaşı</div>
+<div class="flex gap-8 text-sm tracking-widest uppercase font-sans">
+<a class="text-[#9a8f80] hover:text-[#e9c176] transition-colors" href="#">Gizlilik Politikası</a>
+<a class="text-[#9a8f80] hover:text-[#e9c176] transition-colors" href="#">Kullanım Şartları</a>
+<a class="text-[#9a8f80] hover:text-[#e9c176] transition-colors" href="#">Basın Kiti</a>
+</div>
+<p class="text-on-surface-variant font-sans text-xs tracking-widest uppercase opacity-50">
+                BARAN YILMAZ
+            </p>
+</div>
+</footer>
+</body></html>

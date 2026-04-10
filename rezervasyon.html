@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#e5e2e1",
+                    "primary-container": "#c5a059",
+                    "on-primary-container": "#4e3700",
+                    "on-error-container": "#ffdad6",
+                    "surface-container-low": "#1c1b1b",
+                    "on-tertiary-fixed-variant": "#474747",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "surface-container-highest": "#353534",
+                    "secondary-container": "#474746",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-surface-variant": "#d1c5b4",
+                    "error": "#ffb4ab",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "on-secondary-container": "#b7b5b4",
+                    "outline": "#9a8f80",
+                    "on-primary-fixed-variant": "#5d4201",
+                    "primary-fixed-dim": "#e9c176",
+                    "surface-tint": "#e9c176",
+                    "on-background": "#e5e2e1",
+                    "surface-dim": "#131313",
+                    "on-tertiary-container": "#3b3b3b",
+                    "tertiary": "#c8c6c5",
+                    "surface-bright": "#393939",
+                    "surface-container": "#201f1f",
+                    "surface-variant": "#353534",
+                    "inverse-primary": "#775a19",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "on-error": "#690005",
+                    "on-primary": "#412d00",
+                    "tertiary-fixed": "#e4e2e1",
+                    "inverse-surface": "#e5e2e1",
+                    "surface": "#131313",
+                    "on-secondary": "#313030",
+                    "surface-container-high": "#2a2a2a",
+                    "on-primary-fixed": "#261900",
+                    "on-secondary-fixed-variant": "#474746",
+                    "on-tertiary": "#303030",
+                    "background": "#131313",
+                    "secondary-fixed": "#e5e2e1",
+                    "primary": "#e9c176",
+                    "primary-fixed": "#ffdea5",
+                    "inverse-on-surface": "#313030",
+                    "error-container": "#93000a",
+                    "tertiary-container": "#a7a5a5",
+                    "outline-variant": "#4e4639",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "secondary": "#c8c6c5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(32, 31, 31, 0.7);
+            backdrop-filter: blur(20px);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(233, 193, 118, 0.3);
+        }
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover, 
+        input:-webkit-autofill:focus {
+            -webkit-text-fill-color: #e5e2e1;
+            -webkit-box-shadow: 0 0 0px 1000px #1c1b1b inset;
+            transition: background-color 5000s ease-in-out 0s;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-12 py-6 bg-stone-950/80 backdrop-blur-xl shadow-2xl shadow-black/50">
+<a href="giris.html" class="font-serif text-2xl tracking-tighter text-amber-200 uppercase hover:opacity-90 transition-opacity">YILMAZ OCAKBAŞI</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label uppercase tracking-widest text-xs text-stone-400 hover:text-amber-100 transition-colors" href="giris.html">ANA SAYFA</a>
+<a class="font-label uppercase tracking-widest text-xs text-stone-400 hover:text-amber-100 transition-colors" href="menu.html">MENÜ</a>
+<a class="font-label uppercase tracking-widest text-xs text-amber-200 border-b-2 border-amber-200 pb-1" href="rezervasyon.html">REZERVASYON</a>
+<a class="font-label uppercase tracking-widest text-xs text-stone-400 hover:text-amber-100 transition-colors" href="iletisim.html">İLETİŞİM</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 font-label text-xs tracking-widest font-bold hover:bg-primary-container transition-all duration-300 active:scale-95">
+            MASA AYIRT
+        </button>
+</nav>
+<main class="pt-32 pb-20">
+<!-- Hero Section -->
+<section class="px-6 md:px-12 mb-24">
+<div class="relative h-[409px] w-full overflow-hidden rounded-xl">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-surface/60 to-surface z-10"></div>
+<img class="w-full h-full object-cover" data-alt="close-up of glowing charcoal embers in a traditional turkish grill with soft smoke and warm orange highlights in a dark environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAasTXqCazde3BkzW7zderbOYdwJHf3JVPPDWvN-0aCTwdM9uY3UrYTg7JNAoxDkcvqclXNFRW8EQ4VAH7jsuHxKuurMjOGeEwtjvDfisN7fub9h4kyPmsb1ooVxelIHfIF9ssfh0PXnKhrrrqNWr1eQn0F87-yUSKAPQkjJnTauGwx7wHjRlR0m9-RMos7FmDNH48yLU5hx5fpaFHSTXhOjbW5pd23OtVzFrHRfJb-oQASf_7ZLi_PQ8l_aKYP4cuDqj00wHk5ddI"/>
+<div class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4">
+<h1 class="font-headline text-5xl md:text-7xl text-primary text-glow mb-4">REZERVASYON</h1>
+<p class="font-body text-on-surface-variant max-w-2xl text-lg font-light tracking-wide">
+                        Padişahın ocağında yerinizi ayırtın. Zamansız bir atmosferde, ateşin ustalığıyla hazırlanan eşsiz lezzetleri deneyimleyin.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Main Content: Bento Layout -->
+<section class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Reservation Form Column -->
+<div class="lg:col-span-7 bg-surface-container-low p-8 md:p-12 rounded-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
+<h2 class="font-headline text-3xl text-on-surface mb-8">Masa Rezervasyonu</h2>
+<form class="space-y-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<!-- Name Input -->
+<div class="relative group">
+<input class="peer w-full bg-transparent border-0 border-b border-outline py-3 focus:ring-0 focus:border-primary transition-all text-on-surface placeholder-transparent" id="name" name="name" placeholder=" " required="" type="text"/>
+<label class="absolute left-0 top-3 font-label text-sm text-on-surface-variant duration-300 transform -translate-y-6 scale-75 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 peer-focus:text-primary uppercase tracking-wider" for="name">AD SOYAD</label>
+</div>
+<!-- Email Input -->
+<div class="relative group">
+<input class="peer w-full bg-transparent border-0 border-b border-outline py-3 focus:ring-0 focus:border-primary transition-all text-on-surface placeholder-transparent" id="email" name="email" placeholder=" " required="" type="email"/>
+<label class="absolute left-0 top-3 font-label text-sm text-on-surface-variant duration-300 transform -translate-y-6 scale-75 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 peer-focus:text-primary uppercase tracking-wider" for="email">E-POSTA ADRESİ</label>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+<!-- Date Select -->
+<div class="relative group">
+<input class="peer w-full bg-transparent border-0 border-b border-outline py-3 focus:ring-0 focus:border-primary transition-all text-on-surface appearance-none" id="date" name="date" required="" type="date"/>
+<label class="absolute left-0 -top-4 font-label text-xs text-primary uppercase tracking-wider" for="date">TARİH</label>
+</div>
+<!-- Time Select -->
+<div class="relative group">
+<select class="peer w-full bg-transparent border-0 border-b border-outline py-3 focus:ring-0 focus:border-primary transition-all text-on-surface appearance-none" id="time" name="time" required="">
+<option class="bg-surface-container" value="">SAAT SEÇİN</option>
+<option class="bg-surface-container" value="18:00">18:00</option>
+<option class="bg-surface-container" value="19:00">19:00</option>
+<option class="bg-surface-container" value="20:00">20:00</option>
+<option class="bg-surface-container" value="21:00">21:00</option>
+<option class="bg-surface-container" value="22:00">22:00</option>
+</select>
+<label class="absolute left-0 -top-4 font-label text-xs text-primary uppercase tracking-wider" for="time">SAAT ARALIĞI</label>
+</div>
+<!-- Guests Select -->
+<div class="relative group">
+<select class="peer w-full bg-transparent border-0 border-b border-outline py-3 focus:ring-0 focus:border-primary transition-all text-on-surface appearance-none" id="guests" name="guests" required="">
+<option class="bg-surface-container" value="1">1 KİŞİ</option>
+<option class="bg-surface-container" value="2">2 KİŞİ</option>
+<option class="bg-surface-container" value="4">4 KİŞİ</option>
+<option class="bg-surface-container" value="6">6+ KİŞİ</option>
+</select>
+<label class="absolute left-0 -top-4 font-label text-xs text-primary uppercase tracking-wider" for="guests">KİŞİ SAYISI</label>
+</div>
+</div>
+<!-- Message -->
+<div class="relative group">
+<textarea class="peer w-full bg-transparent border-0 border-b border-outline py-3 focus:ring-0 focus:border-primary transition-all text-on-surface placeholder-transparent resize-none" id="message" name="message" placeholder=" " rows="3"></textarea>
+<label class="absolute left-0 top-3 font-label text-sm text-on-surface-variant duration-300 transform -translate-y-6 scale-75 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 peer-focus:text-primary uppercase tracking-wider" for="message">ÖZEL TALEPLER</label>
+</div>
+<div class="pt-6">
+<button class="w-full md:w-auto bg-transparent border-[1.5px] border-primary text-primary px-12 py-4 font-label text-sm tracking-[0.2em] font-bold hover:bg-primary/5 transition-all duration-500 active:scale-95 group flex items-center justify-center gap-3" type="submit">
+                            REZERVASYONU ONAYLA
+                            <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Contact & Map Column -->
+<div class="lg:col-span-5 space-y-8">
+<!-- Contact Details Card -->
+<div class="bg-surface-container-high p-8 rounded-xl border border-outline-variant/10">
+<h3 class="font-headline text-2xl text-primary mb-6">İletişim Bilgileri</h3>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<div>
+<p class="font-label text-xs text-primary uppercase tracking-widest mb-1">ADRES</p>
+<p class="text-on-surface-variant leading-relaxed">Karaköy, Kemankeş Cd. No:34<br/>34425 Beyoğlu/İstanbul</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="call">call</span>
+<div>
+<p class="font-label text-xs text-primary uppercase tracking-widest mb-1">TELEFON</p>
+<p class="text-on-surface-variant">+90 554 576 14 23</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="mail">mail</span>
+<div>
+<p class="font-label text-xs text-primary uppercase tracking-widest mb-1">E-POSTA</p>
+<p class="text-on-surface-variant"><a class="text-primary hover:underline" href="mailto:cemal.yilmaz@std.ankaramedipol.edu.tr">cemal.yilmaz@std.ankaramedipol.edu.tr</a></p>
+</div>
+</div>
+</div>
+</div>
+<!-- Dark Mode Map Integration -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden h-[400px] border border-outline-variant/10 relative">
+<div class="absolute inset-0 bg-black/20 pointer-events-none z-10"></div>
+<img class="w-full h-full object-cover grayscale opacity-40" data-alt="stylized dark mode satellite map of istanbul city center with golden markers and minimal road lines for a luxury aesthetic" data-location="Istanbul" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHgeFpvKJDvwwTgOLRLA508UAxqiH5gHnH4fpbolaXeFYNpWvEHpHHa_VYv-_rySqwO724gNFi3IPUpZhowQUmcBNsoJxgwyhO0TEOcyBMovWuAAH2cv7IZUfvvlZ_PNG6d7gw0OjQI58tKVoHTXjGQyuFOC56uWbeJTKDyR15UhCha-gE_Ds3qr8CP4u_MEi9Q8xx3XpIlHFHdRZYu9VexNHfwc7A0dbT0Pt47T_G1tRkKL0vmxz9C9upNkATfNnsFj-jK7YRvs4"/>
+<div class="absolute inset-0 flex items-center justify-center z-20">
+<div class="relative">
+<div class="absolute inset-0 bg-primary blur-xl opacity-30 animate-pulse"></div>
+<span class="material-symbols-outlined text-primary text-5xl relative" data-icon="location_on" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+</div>
+<div class="absolute bottom-4 left-4 right-4 glass-panel p-4 rounded z-30">
+<p class="font-label text-[10px] text-primary tracking-widest uppercase mb-1">YOL TARİFİ AL</p>
+<p class="text-xs text-on-surface">Tercih ettiğiniz navigasyon uygulamasında açmak için tıklayın</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Secondary CTA: Private Events -->
+<section class="max-w-7xl mx-auto px-6 md:px-12 mt-24">
+<div class="bg-surface-container-low border border-outline-variant/10 p-12 rounded-xl flex flex-col md:flex-row items-center justify-between gap-8">
+<div>
+<h2 class="font-headline text-3xl text-on-surface mb-2">Özel Davetler</h2>
+<p class="text-on-surface-variant max-w-lg">En özel kutlamalarınızı özel Sultan Salonu'nda ağırlayın. 24 kişiye kadar gruplar için kişiselleştirilmiş menüler ve özel servis sunulur.</p>
+</div>
+<button class="bg-primary text-on-primary px-10 py-4 font-label text-xs tracking-[0.2em] font-bold hover:bg-primary-container transition-all">
+                    HEMEN BİLGİ AL
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 px-12 grid grid-cols-1 md:grid-cols-4 gap-12 border-t border-stone-800 bg-stone-950">
+<div class="md:col-span-1">
+<div class="font-serif text-xl text-amber-200 uppercase mb-4">YILMAZ OCAKBAŞI</div>
+<p class="font-body text-sm text-stone-400 leading-relaxed mb-6">Padişahın Ocağı. İstanbul'un kalbinde ateşte olgunlaşan bir lezzet mirası.</p>
+</div>
+<div>
+<p class="font-headline text-amber-200 text-sm tracking-widest uppercase mb-6">SİTE HARİTASI</p>
+<ul class="space-y-3 font-body text-sm text-stone-500">
+<li><a class="hover:text-amber-100 underline-offset-4 hover:underline transition-all" href="menu.html">Menü</a></li>
+<li><a class="hover:text-amber-100 underline-offset-4 hover:underline transition-all" href="giris.html">Hikayemiz</a></li>
+<li><a class="hover:text-amber-100 underline-offset-4 hover:underline transition-all" href="rezervasyon.html">Rezervasyon</a></li>
+<li><a class="hover:text-amber-100 underline-offset-4 hover:underline transition-all" href="#">Özel Davetler</a></li>
+</ul>
+</div>
+<div>
+<p class="font-headline text-amber-200 text-sm tracking-widest uppercase mb-6">ÇALIŞMA SAATLERİ</p>
+<ul class="space-y-3 font-body text-sm text-stone-500">
+<li class="flex justify-between"><span>Pzt - Per</span> <span>17:00 - 00:00</span></li>
+<li class="flex justify-between"><span>Cuma - Cmt</span> <span>17:00 - 02:00</span></li>
+<li class="flex justify-between"><span>Pazar</span> <span>14:00 - 23:00</span></li>
+</ul>
+</div>
+<div>
+<p class="font-headline text-amber-200 text-sm tracking-widest uppercase mb-6">YASAL</p>
+<ul class="space-y-3 font-body text-sm text-stone-500">
+<li><a class="hover:text-amber-100 underline-offset-4 hover:underline transition-all" href="#">Gizlilik Politikası</a></li>
+<li><a class="hover:text-amber-100 underline-offset-4 hover:underline transition-all" href="#">Kullanım Şartları</a></li>
+<li><a class="hover:text-amber-100 underline-offset-4 hover:underline transition-all" href="#">Basın Kiti</a></li>
+</ul>
+</div>
+<div class="md:col-span-4 pt-12 border-t border-stone-900 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body text-sm text-stone-400">BARAN YILMAZ</p>
+<div class="flex gap-6">
+<a class="text-stone-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined" data-icon="camera">camera</span></a>
+<a class="text-stone-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined" data-icon="alternate_email">alternate_email</span></a>
+<a class="text-stone-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined" data-icon="map">map</span></a>
+</div>
+</div>
+</footer>
+</body></html>
